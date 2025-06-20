@@ -27,7 +27,7 @@ public class UsuarioController {
     UsuarioService usuarioService;
 
     // Enlista
-    @GetMapping("/usuarios")
+    @GetMapping
     public List<Usuario> selectAllUsuarios(){
         return usuarioService.selectAllUsuario();
     }
