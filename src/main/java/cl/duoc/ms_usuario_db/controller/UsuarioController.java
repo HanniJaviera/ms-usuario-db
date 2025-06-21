@@ -34,7 +34,7 @@ public class UsuarioController {
 
     // Busca 
     @GetMapping("/{id}")
-    public ResponseEntity<Usuario> findUsuarioById(@PathVariable Long id) {
+    public ResponseEntity<Usuario> findUsuarioById(@PathVariable("id") Long id) {
         Usuario usuario = usuarioService.findUsuarioById(id);
         return (usuario != null) ? new ResponseEntity<>(usuario, HttpStatus.OK)
                                  : new ResponseEntity<>(HttpStatus.NOT_FOUND);
