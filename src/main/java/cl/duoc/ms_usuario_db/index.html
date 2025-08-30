@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets\vinilo.jpg">
+    <title>¡Tu música a la mano! (Javiera Ramírez)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    img {
+      width: 600px; /* gif más grande */
+      max-width: 100%; /* para que no se salga en pantallas pequeñas */
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+            :target {
+            padding-top: 70px;
+            margin-top: -70px;
+        }
+  </style>
+
+  <body>
+        <div id="myForm">
+            <h2>Formulario de ontacto</h2>
+            <form action="http://localhost:8081//usuarios/" method="get">
+                <label>Name:<input id="name" name="name"></label>
+                <label>Address:<input id="addr" name="adress"></label>
+                <input type="submit" value="Enviar">
+            </form>
+            <button onclick="showAlert()">Click Me</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  </html>
