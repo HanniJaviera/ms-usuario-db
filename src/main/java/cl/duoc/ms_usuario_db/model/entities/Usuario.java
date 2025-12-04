@@ -39,5 +39,7 @@ public class Usuario {
 
     @Column(name = "direccion")
     private String direccion;
-
+    
+    @Column(name = "password")
+    private String password;
 }

@@ -35,4 +35,7 @@ public class UsuarioDTO {
 
     @JsonProperty(value = "usuario_direccion")
     private String direccion;
+
+    @JsonProperty(value = "usuario_password")
+    private String password;
 }
