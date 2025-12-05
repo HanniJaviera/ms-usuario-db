@@ -19,4 +19,4 @@ RUN ./gradlew clean build -x test
  
 # Run the app by dynamically finding the JAR file in the target directory
 # CMD ["sh", "-c", "java -jar target/*.jar"]
-CMD ["sh", "-c", "java -Dserver.port=${PORT} -jar build/libs/ms-usuario-db-0.0.1-SNAPSHOT.jar"]
+CMD java -Dserver.port=$PORT -jar build/libs/ms-usuario-db-0.0.1-SNAPSHOT.jar
